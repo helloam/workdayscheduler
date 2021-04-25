@@ -7,7 +7,7 @@ $(document).ready(function () {
 
     var hoursDayfull = [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19];
     var hoursDay = [9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7];
-    var numArr = ["nine", "ten", "eleven", "twelve", "one", "two", "three", "four", "five", "six", "seven"];
+    var timeArr = ["nine", "ten", "eleven", "twelve", "one", "two", "three", "four", "five", "six", "seven"];
 
     $("#currentDay").append(currentDate);
 
@@ -20,7 +20,7 @@ $(document).ready(function () {
         newRow.append(newCol1, newCol2);
         newCol1.attr("class", "col-2 hour");
         newCol2.attr("class", "col-9 input");
-        newCol2.attr("id", numArr[i]);
+        newCol2.attr("id", timeArr[i]);
         newCol2.html("<textarea rows='3'style='width: 100%; margin-left:-2rem; height: 100%'></textarea>");
         newRow.addClass("time-block row");
         newRow.attr("id", hoursDayfull[i]);
@@ -67,6 +67,6 @@ $(document).ready(function () {
     })
 
     for (var i=0; i < hoursDay.length; i++) {
-    $("#"+numArr[i]).children("textarea").text(localStorage.getItem(hoursDay[i]));
+    $("#"+timeArr[i]).children("textarea").text(localStorage.getItem(hoursDay[i]));
     }
 })
