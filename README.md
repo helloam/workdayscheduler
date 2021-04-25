@@ -19,5 +19,5 @@ WHEN I refresh the page
 THEN the saved events persist
 
 Link to live app: https://helloam.github.io/workdayscheduler/
-Screenshot:
+Screenshot: Screen Shot 2021-04-25 at 11.21.04 AM.png
 
